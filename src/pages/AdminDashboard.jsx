@@ -553,60 +553,60 @@ export const AdminDashboard = () => {
         </div>
 
         {/* Top Business Statistics Metric Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3.5 mb-6">
-          <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-3.5 mb-6">
+          <div className="bg-white p-3 sm:p-4 rounded-2xl border border-slate-200/80 shadow-sm">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
+              <span className="text-[10px] sm:text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
                 Total Orders
               </span>
               <Package className="w-4 h-4 text-teal-600" />
             </div>
-            <span className="text-2xl font-black text-slate-900">
+            <span className="text-xl sm:text-2xl font-black text-slate-900">
               {statsLoading ? '...' : stats.totalOrders}
             </span>
             <span className="text-[10px] text-slate-400 block mt-0.5">All time orders</span>
           </div>
 
-          <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm">
+          <div className="bg-white p-3 sm:p-4 rounded-2xl border border-slate-200/80 shadow-sm">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
+              <span className="text-[10px] sm:text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
                 Customers
               </span>
               <Users className="w-4 h-4 text-blue-600" />
             </div>
-            <span className="text-2xl font-black text-slate-900">
+            <span className="text-xl sm:text-2xl font-black text-slate-900">
               {statsLoading ? '...' : stats.totalUsers}
             </span>
             <span className="text-[10px] text-slate-400 block mt-0.5">Registered accounts</span>
           </div>
 
-          <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm">
+          <div className="bg-white p-3 sm:p-4 rounded-2xl border border-slate-200/80 shadow-sm">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
+              <span className="text-[10px] sm:text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
                 Pending
               </span>
               <Clock className="w-4 h-4 text-amber-500" />
             </div>
-            <span className="text-2xl font-black text-amber-600">
+            <span className="text-xl sm:text-2xl font-black text-amber-600">
               {statsLoading ? '...' : stats.pendingOrders}
             </span>
             <span className="text-[10px] text-slate-400 block mt-0.5">Awaiting confirmation</span>
           </div>
 
-          <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm">
+          <div className="bg-white p-3 sm:p-4 rounded-2xl border border-slate-200/80 shadow-sm">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
+              <span className="text-[10px] sm:text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
                 Delivered
               </span>
               <CheckCircle className="w-4 h-4 text-emerald-600" />
             </div>
-            <span className="text-2xl font-black text-emerald-600">
+            <span className="text-xl sm:text-2xl font-black text-emerald-600">
               {statsLoading ? '...' : stats.completedOrders}
             </span>
             <span className="text-[10px] text-slate-400 block mt-0.5">Fulfilled orders</span>
           </div>
 
-          <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm col-span-2 sm:col-span-1">
+          <div className="bg-white p-3 sm:p-4 rounded-2xl border border-slate-200/80 shadow-sm col-span-2 sm:col-span-1">
             <div className="flex items-center justify-between mb-2">
               <span className="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
                 Total Revenue
@@ -1445,8 +1445,8 @@ export const AdminDashboard = () => {
 
       {/* Product Creation / Edit Modal */}
       {isCreateModalOpen && (
-        <div className="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in">
-          <div className="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 animate-fade-in">
+          <div className="bg-white rounded-3xl max-w-lg w-full p-4 sm:p-6 shadow-2xl border border-slate-200 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-4">
               <h3 className="text-lg font-bold text-slate-900">
                 {editingProduct ? 'Edit Catalog Product' : 'Add New Product (Cloudinary & MongoDB)'}
@@ -1474,7 +1474,7 @@ export const AdminDashboard = () => {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                   <label className="block font-bold text-slate-700 uppercase tracking-wider mb-1">
                     Category *
@@ -1506,7 +1506,7 @@ export const AdminDashboard = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div>
                   <label className="block font-bold text-slate-700 uppercase tracking-wider mb-1">
                     Price (USD) *

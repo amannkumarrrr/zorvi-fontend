@@ -96,7 +96,7 @@ export const Wishlist = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <button
               onClick={handleAddAllToCart}
               className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-xl transition flex items-center gap-1.5 shadow-sm"
@@ -115,14 +115,14 @@ export const Wishlist = () => {
         </div>
 
         {/* Saved Items Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-6">
           {wishlistItems.map((item) => {
             const originalUSD = getOriginalPrice(item.price, item.discountPercentage);
 
             return (
               <div
                 key={item.id}
-                className="group bg-white rounded-2xl border border-slate-200/80 p-4 flex flex-col justify-between hover:shadow-lg transition-all duration-200 relative"
+                className="group bg-white rounded-2xl border border-slate-200/80 p-2.5 sm:p-4 flex flex-col justify-between hover:shadow-lg transition-all duration-200 relative"
               >
                 <div>
                   {/* Remove Button */}

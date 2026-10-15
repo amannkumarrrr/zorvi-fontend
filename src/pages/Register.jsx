@@ -272,7 +272,7 @@ export const Register = () => {
         <Breadcrumbs items={[{ label: 'Create Account' }]} />
 
         <div className="max-w-md mx-auto my-8">
-          <div className="bg-white rounded-3xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
+          <div className="bg-white rounded-3xl border border-slate-200/80 p-4 sm:p-8 shadow-sm">
             {/* Header */}
             <div className="text-center mb-6">
               <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white border border-slate-200 flex items-center justify-center mx-auto mb-3 p-1 shadow-sm">
@@ -457,7 +457,7 @@ export const Register = () => {
                   </div>
 
                   {/* 6 Digit Inputs */}
-                  <div className="flex gap-2 sm:gap-2.5 justify-center" onPaste={handleOtpPaste}>
+                  <div className="flex gap-1.5 sm:gap-2.5 justify-center" onPaste={handleOtpPaste}>
                     {otp.map((digit, idx) => (
                       <input
                         key={idx}
@@ -468,7 +468,7 @@ export const Register = () => {
                         value={digit}
                         onChange={(e) => handleOtpChange(idx, e.target.value)}
                         onKeyDown={(e) => handleOtpKeyDown(idx, e)}
-                        className={`w-11 sm:w-12 h-13 text-center text-xl font-bold font-mono rounded-xl border bg-slate-50/80 outline-none transition ${
+                        className={`w-9 sm:w-12 h-11 sm:h-13 text-center text-lg sm:text-xl font-bold font-mono rounded-xl border bg-slate-50/80 outline-none transition ${
                           digit
                             ? 'border-teal-500 bg-teal-50/20 text-slate-900'
                             : 'border-slate-200 text-slate-700 focus:border-teal-500 focus:bg-white'

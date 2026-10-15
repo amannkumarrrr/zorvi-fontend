@@ -307,7 +307,7 @@ export const ProductDetails = () => {
         />
 
         {/* Main Product Container */}
-        <div className="bg-white rounded-3xl border border-slate-200/80 p-5 sm:p-8 lg:p-10 shadow-sm mt-4">
+        <div className="bg-white rounded-3xl border border-slate-200/80 p-4 sm:p-8 lg:p-10 shadow-sm mt-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14">
             
             {/* Left: Gallery Section */}
@@ -353,7 +353,7 @@ export const ProductDetails = () => {
                     <button
                       key={idx}
                       onClick={() => setSelectedImage(img)}
-                      className={`relative w-20 h-20 rounded-xl overflow-hidden bg-slate-50 p-1.5 border-2 transition shrink-0 ${
+                      className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-slate-50 p-1.5 border-2 transition shrink-0 ${
                         selectedImage === img
                           ? 'border-teal-600 shadow-sm'
                           : 'border-slate-100 hover:border-slate-300'
@@ -547,7 +547,7 @@ export const ProductDetails = () => {
                 </div>
 
                 {/* Trust Highlights */}
-                <div className="grid grid-cols-3 gap-3 pt-4 border-t border-slate-100 text-slate-600 text-[11px]">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-4 border-t border-slate-100 text-slate-600 text-xs sm:text-[11px]">
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-teal-600 shrink-0" />
                     <span>{warrantyInformation || '1 Year Brand Warranty'}</span>

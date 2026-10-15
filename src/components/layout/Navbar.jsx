@@ -123,7 +123,7 @@ export const Navbar = () => {
   return (
     <header className="sticky top-0 z-40 w-full">
       {/* 1. Announcement Bar */}
-      <div className="bg-slate-900 text-slate-200 text-xs py-2 px-4 transition-colors border-b border-slate-800">
+      <div className="bg-slate-900 text-slate-200 text-[11px] sm:text-xs py-1.5 sm:py-2 px-3 sm:px-4 transition-colors border-b border-slate-800">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="flex h-2 w-2 rounded-full bg-teal-400 animate-pulse" />
@@ -276,7 +276,7 @@ export const Navbar = () => {
               ) : (
                 <Link
                   to="/login"
-                  className="flex items-center gap-1.5 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-full transition"
+                  className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-4 py-1.5 sm:py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-[11px] sm:text-xs font-bold rounded-full transition"
                 >
                   <LogIn className="w-3.5 h-3.5 text-slate-600" />
                   <span>Sign In</span>
@@ -405,7 +405,7 @@ export const Navbar = () => {
       {/* Mobile Drawer Menu */}
       {isMobileMenuOpen && (
         <div className="sm:hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
-          <div className="fixed inset-y-0 right-0 w-4/5 max-w-sm bg-white shadow-2xl p-6 flex flex-col justify-between overflow-y-auto animate-slide-up">
+          <div className="fixed inset-y-0 right-0 w-[85vw] max-w-xs sm:max-w-sm bg-white shadow-2xl p-4 sm:p-6 flex flex-col justify-between overflow-y-auto animate-slide-up">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
                 <div className="flex items-center gap-2.5">

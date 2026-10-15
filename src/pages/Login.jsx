@@ -84,7 +84,7 @@ export const Login = () => {
         <Breadcrumbs items={[{ label: 'Sign In' }]} />
 
         <div className="max-w-md mx-auto my-8">
-          <div className="bg-white rounded-3xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
+          <div className="bg-white rounded-3xl border border-slate-200/80 p-4 sm:p-8 shadow-sm">
             {/* Header */}
             <div className="text-center mb-8">
               <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white border border-slate-200 flex items-center justify-center mx-auto mb-3 p-1 shadow-sm">

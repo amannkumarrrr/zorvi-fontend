@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const BACKEND_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001/api';
+const BACKEND_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  (import.meta.env.PROD ? 'https://zorvi-backend.vercel.app/api' : 'http://localhost:5001/api');
 
 const apiClient = axios.create({
   baseURL: BACKEND_BASE_URL,

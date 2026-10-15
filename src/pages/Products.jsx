@@ -451,7 +451,7 @@ export const Products = () => {
 
             {/* Pagination Controls */}
             {!loading && totalPages > 1 && (
-              <div className="mt-12 flex items-center justify-center gap-2">
+              <div className="mt-12 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
                 <button
                   onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                   disabled={currentPage === 1}
@@ -493,7 +493,7 @@ export const Products = () => {
       {/* Mobile Filter Drawer */}
       {isMobileFilterOpen && (
         <div className="lg:hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
-          <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between overflow-y-auto animate-slide-up">
+          <div className="fixed inset-y-0 right-0 w-[85vw] max-w-xs bg-white shadow-2xl p-4 sm:p-6 flex flex-col justify-between overflow-y-auto animate-slide-up">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
                 <div className="flex items-center gap-2">

@@ -718,7 +718,7 @@ export const Checkout = () => {
                 <div className="space-y-3">
                   {/* Demo UPI QR Code (College Demonstration) */}
                   <label
-                    className={`flex items-center justify-between p-4 rounded-2xl border cursor-pointer transition ${
+                    className={`flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 rounded-2xl border cursor-pointer transition ${
                       formData.paymentMethod === 'demo_upi_qr'
                         ? 'border-teal-600 bg-teal-50/40 ring-1 ring-teal-600'
                         : 'border-slate-200 hover:bg-slate-50'
@@ -748,14 +748,14 @@ export const Checkout = () => {
                         </div>
                       </div>
                     </div>
-                    <span className="text-[11px] font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded border border-teal-200/50">
+                    <span className="text-[11px] font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded border border-teal-200/50 w-fit">
                       Recommended for Demo
                     </span>
                   </label>
 
                   {/* Razorpay Online Payment */}
                   <label
-                    className={`flex items-center justify-between p-4 rounded-2xl border cursor-pointer transition ${
+                    className={`flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 rounded-2xl border cursor-pointer transition ${
                       formData.paymentMethod === 'razorpay'
                         ? 'border-teal-600 bg-teal-50/40 ring-1 ring-teal-600'
                         : 'border-slate-200 hover:bg-slate-50'
@@ -782,14 +782,14 @@ export const Checkout = () => {
                         </div>
                       </div>
                     </div>
-                    <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded">
+                    <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded w-fit">
                       Instant Confirmation
                     </span>
                   </label>
 
                   {/* Cash on Delivery */}
                   <label
-                    className={`flex items-center justify-between p-4 rounded-2xl border cursor-pointer transition ${
+                    className={`flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 rounded-2xl border cursor-pointer transition ${
                       formData.paymentMethod === 'cod'
                         ? 'border-teal-600 bg-teal-50/40 ring-1 ring-teal-600'
                         : 'border-slate-200 hover:bg-slate-50'
@@ -812,7 +812,7 @@ export const Checkout = () => {
                         </div>
                       </div>
                     </div>
-                    <span className="text-[11px] font-bold text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded">
+                    <span className="text-[11px] font-bold text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded w-fit">
                       Pay on Delivery
                     </span>
                   </label>
@@ -1045,8 +1045,8 @@ export const Checkout = () => {
 
       {/* Dedicated UPI QR Payment Modal */}
       {isQrModalOpen && qrOrderData && (
-        <div className="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto animate-fade-in">
-          <div className="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl border border-slate-200 text-center animate-slide-up relative my-8">
+        <div className="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 overflow-y-auto animate-fade-in">
+          <div className="bg-white rounded-3xl max-w-md w-full p-4 sm:p-7 shadow-2xl border border-slate-200 text-center animate-slide-up relative my-4 sm:my-8">
             {/* Header */}
             <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
               <div className="flex items-center gap-2.5 text-left">

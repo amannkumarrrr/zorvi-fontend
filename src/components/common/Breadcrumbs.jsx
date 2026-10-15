@@ -23,13 +23,13 @@ export const Breadcrumbs = ({ items = [] }) => {
             <li key={index} className="inline-flex items-center">
               <ChevronRight className="w-3.5 h-3.5 text-slate-300 mx-1 shrink-0" />
               {isLast || !item.to ? (
-                <span className="font-semibold text-slate-800 truncate max-w-[200px] sm:max-w-xs" aria-current="page">
+                <span className="font-semibold text-slate-800 truncate max-w-[120px] sm:max-w-xs" aria-current="page">
                   {item.label}
                 </span>
               ) : (
                 <Link
                   to={item.to}
-                  className="font-medium text-slate-500 hover:text-teal-700 transition-colors truncate max-w-[150px] sm:max-w-xs"
+                  className="font-medium text-slate-500 hover:text-teal-700 transition-colors truncate max-w-[100px] sm:max-w-xs"
                 >
                   {item.label}
                 </Link>

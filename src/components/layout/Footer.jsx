@@ -36,7 +36,7 @@ export const Footer = () => {
     <footer className="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-900 mt-20">
       {/* 1. Value Proposition Pillars */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 pb-12 border-b border-slate-900">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
           <div className="flex items-start gap-4">
             <div className="p-3 bg-teal-950/60 text-teal-400 border border-teal-800/40 rounded-2xl shrink-0">
               <Truck className="w-6 h-6" />
@@ -238,14 +238,14 @@ export const Footer = () => {
         </div>
 
         {/* 3. Bottom Strip: Payment Icons & Copyright */}
-        <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
           <p>
             &copy; {new Date().getFullYear()} ZORVI. Demo store built with React, Vite & Tailwind CSS.
           </p>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3">
             <span className="text-[11px] text-slate-400">Accepted Demo Payments:</span>
-            <div className="flex items-center gap-2 text-slate-300 font-bold text-[11px]">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5 sm:gap-2 text-slate-300 font-bold text-[11px]">
               <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">UPI</span>
               <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">COD</span>
               <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">RuPay</span>

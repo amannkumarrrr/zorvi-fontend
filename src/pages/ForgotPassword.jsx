@@ -268,7 +268,7 @@ export const ForgotPassword = () => {
         />
 
         <div className="max-w-md mx-auto my-8">
-          <div className="bg-white rounded-3xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
+          <div className="bg-white rounded-3xl border border-slate-200/80 p-4 sm:p-8 shadow-sm">
             {/* Step Progress Indicators */}
             {step < 4 && (
               <div className="flex items-center justify-between mb-8 px-2">
@@ -405,7 +405,7 @@ export const ForgotPassword = () => {
 
                 <form onSubmit={handleVerifyOtp} className="space-y-6">
                   {/* 6 Digit Input Boxes */}
-                  <div className="flex justify-center gap-2 sm:gap-2.5" onPaste={handleOtpPaste}>
+                  <div className="flex justify-center gap-1.5 sm:gap-2.5" onPaste={handleOtpPaste}>
                     {otp.map((digit, idx) => (
                       <input
                         key={idx}
@@ -417,7 +417,7 @@ export const ForgotPassword = () => {
                         value={digit}
                         onChange={(e) => handleOtpChange(idx, e.target.value)}
                         onKeyDown={(e) => handleOtpKeyDown(idx, e)}
-                        className="w-11 h-13 sm:w-12 sm:h-14 text-center font-mono text-xl font-black text-slate-900 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-500/20 transition shadow-xs"
+                        className="w-9 h-11 sm:w-12 sm:h-14 text-center font-mono text-lg sm:text-xl font-black text-slate-900 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-500/20 transition shadow-xs"
                         autoFocus={idx === 0}
                       />
                     ))}

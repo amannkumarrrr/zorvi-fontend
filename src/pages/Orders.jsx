@@ -369,7 +369,7 @@ export const Orders = () => {
                   className="bg-white rounded-3xl border border-slate-200/90 shadow-sm overflow-hidden hover:shadow-md transition"
                 >
                   {/* Order Header */}
-                  <div className="bg-slate-50/80 px-6 py-4 border-b border-slate-100 flex flex-wrap items-center justify-between gap-4">
+                  <div className="bg-slate-50/80 px-4 sm:px-6 py-3.5 sm:py-4 border-b border-slate-100 flex flex-wrap items-center justify-between gap-4">
                     <div className="space-y-1">
                       <div className="flex items-center gap-3">
                         <span className="font-mono font-black text-sm text-slate-900">
@@ -425,12 +425,12 @@ export const Orders = () => {
                   </div>
 
                   {/* Visual Tracking Timeline */}
-                  <div className="px-6 pt-2">
+                  <div className="px-4 sm:px-6 pt-2">
                     <OrderTrackingTimeline order={order} />
                   </div>
 
                   {/* Order Items List */}
-                  <div className="p-6 divide-y divide-slate-100">
+                  <div className="p-4 sm:p-6 divide-y divide-slate-100">
                     {order.items?.map((item, idx) => (
                       <div key={idx} className="py-3 first:pt-0 last:pb-0 flex items-center justify-between gap-4">
                         <div className="flex items-center gap-3">
@@ -498,7 +498,7 @@ export const Orders = () => {
                   </div>
 
                   {/* Footer with Shipping details & Actions */}
-                  <div className="bg-slate-50/50 px-6 py-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4 text-xs">
+                  <div className="bg-slate-50/50 px-4 sm:px-6 py-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 sm:gap-4 text-xs">
                     <div className="text-slate-500 text-[11px]">
                       Delivering to: <strong className="text-slate-700">{order.shippingAddress?.fullName}</strong>,{' '}
                       {order.shippingAddress?.city} ({order.shippingAddress?.pincode})

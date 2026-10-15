@@ -116,7 +116,7 @@ export const Cart = () => {
 
         {/* Free Delivery Bar */}
         <div className="bg-white rounded-2xl border border-slate-200/80 p-4 mb-8 shadow-sm">
-          <div className="flex items-center justify-between text-xs font-semibold mb-2">
+          <div className="flex flex-wrap sm:flex-nowrap items-center justify-between gap-1 text-xs font-semibold mb-2">
             <div className="flex items-center gap-2 text-slate-800">
               <Truck className="w-4 h-4 text-teal-600" />
               {amountNeededForFreeDelivery > 0 ? (
@@ -190,7 +190,7 @@ export const Cart = () => {
                     </div>
 
                     {/* Quantity & Item Subtotal */}
-                    <div className="flex items-center justify-between sm:justify-end gap-6 w-full sm:w-auto pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
+                    <div className="flex items-center justify-between sm:justify-end gap-3 sm:gap-6 w-full sm:w-auto pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
                       {/* Quantity Controls */}
                       <div className="flex items-center border border-slate-200 rounded-xl bg-slate-50/50 overflow-hidden shadow-inner">
                         <button

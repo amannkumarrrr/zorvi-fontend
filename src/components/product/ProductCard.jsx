@@ -77,7 +77,7 @@ export const ProductCard = ({ product }) => {
   return (
     <div
       onClick={handleCardClick}
-      className="group relative bg-white rounded-2xl border border-slate-200/80 hover:border-teal-500/30 p-3.5 sm:p-4 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 cursor-pointer"
+      className="group relative bg-white rounded-2xl border border-slate-200/80 hover:border-teal-500/30 p-2.5 sm:p-4 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 cursor-pointer"
       role="article"
       aria-label={title}
     >

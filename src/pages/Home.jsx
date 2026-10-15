@@ -144,7 +144,7 @@ export const Home = () => {
                 <span>Next-Gen E-Commerce Frontend Experience</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-white">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-white">
                 Discover Curated <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-teal-200 to-emerald-400">
                   Luxury & Lifestyle
@@ -221,7 +221,7 @@ export const Home = () => {
                 </div>
 
                 {/* Floating Tag */}
-                <div className="absolute -top-4 -right-4 bg-white text-slate-900 px-4 py-2 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-2 animate-bounce">
+                <div className="absolute -top-3 right-2 sm:-top-4 sm:-right-4 bg-white text-slate-900 px-3 sm:px-4 py-1.5 sm:py-2 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-2 animate-bounce">
                   <Percent className="w-4 h-4 text-rose-500" />
                   <span className="text-xs font-bold">Up to 40% Off Deals</span>
                 </div>
@@ -312,7 +312,7 @@ export const Home = () => {
 
       {/* 4. Promotional Banner (Deal of the Day) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-teal-900 via-slate-900 to-indigo-950 text-white p-8 sm:p-12 shadow-xl border border-teal-800/40">
+        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-teal-900 via-slate-900 to-indigo-950 text-white p-5 sm:p-12 shadow-xl border border-teal-800/40">
           {/* Decorative glow */}
           <div className="absolute right-0 top-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -332,7 +332,7 @@ export const Home = () => {
               </p>
 
               {/* Countdown Timer */}
-              <div className="flex items-center gap-3 pt-2">
+              <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-2">
                 <div className="flex items-center gap-1.5 text-xs text-slate-300 mr-2">
                   <Clock className="w-4 h-4 text-teal-400" />
                   <span>Ends in:</span>
