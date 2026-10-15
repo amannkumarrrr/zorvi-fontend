@@ -44,7 +44,7 @@ export const authApi = {
     } catch (error) {
       const message =
         error.response?.data?.message ||
-        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach API server on port 5001' : error.message) ||
+        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach ZORVI API server. Please check your connection.' : error.message) ||
         'Registration failed.';
       const errors = error.response?.data?.errors || [];
       const err = new Error(message);
@@ -69,7 +69,7 @@ export const authApi = {
     } catch (error) {
       const message =
         error.response?.data?.message ||
-        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach API server on port 5001' : error.message) ||
+        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach ZORVI API server. Please check your connection.' : error.message) ||
         'Invalid email or password.';
       const errors = error.response?.data?.errors || [];
       const err = new Error(message);
@@ -142,7 +142,7 @@ export const authApi = {
     } catch (error) {
       const message =
         error.response?.data?.message ||
-        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach API server on port 5001' : error.message) ||
+        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach ZORVI API server. Please check your connection.' : error.message) ||
         'Failed to send verification code.';
       const err = new Error(message);
       err.response = error.response;
@@ -163,7 +163,7 @@ export const authApi = {
     } catch (error) {
       const message =
         error.response?.data?.message ||
-        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach API server on port 5001' : error.message) ||
+        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach ZORVI API server. Please check your connection.' : error.message) ||
         'Failed to verify code.';
       const err = new Error(message);
       err.response = error.response;
@@ -186,7 +186,7 @@ export const authApi = {
     } catch (error) {
       const message =
         error.response?.data?.message ||
-        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach API server on port 5001' : error.message) ||
+        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach ZORVI API server. Please check your connection.' : error.message) ||
         'Failed to reset password.';
       const err = new Error(message);
       err.response = error.response;
@@ -204,7 +204,7 @@ export const authApi = {
     } catch (error) {
       const message =
         error.response?.data?.message ||
-        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach API server on port 5001' : error.message) ||
+        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach ZORVI API server. Please check your connection.' : error.message) ||
         'Failed to send signup verification code.';
       const err = new Error(message);
       err.response = error.response;
@@ -224,7 +224,7 @@ export const authApi = {
     } catch (error) {
       const message =
         error.response?.data?.message ||
-        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach API server on port 5001' : error.message) ||
+        (error.code === 'ERR_NETWORK' ? 'Network error: Cannot reach ZORVI API server. Please check your connection.' : error.message) ||
         'Failed to verify signup code.';
       const err = new Error(message);
       err.response = error.response;
