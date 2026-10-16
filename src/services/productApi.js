@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const BACKEND_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
-  (import.meta.env.PROD ? 'https://zorvi-backend.vercel.app/api' : 'http://localhost:5001/api');
+  (import.meta.env.PROD ? 'https://zorvi-backend.onrender.com/api' : 'http://localhost:5001/api');
 const DUMMY_API_URL = 'https://dummyjson.com';
 
 const backendClient = axios.create({
